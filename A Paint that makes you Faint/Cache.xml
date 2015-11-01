@@ -1,0 +1,916 @@
+<vector>
+  <Geometry.TextComponent serialization="custom">
+    <java.awt.Component>
+      <default>
+        <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+        <boundsOp>3</boundsOp>
+        <componentSerializedDataVersion>4</componentSerializedDataVersion>
+        <enabled>true</enabled>
+        <eventMask>4104</eventMask>
+        <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+        <focusable>true</focusable>
+        <height>0</height>
+        <ignoreRepaint>false</ignoreRepaint>
+        <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+        <isPacked>false</isPacked>
+        <maxSizeSet>false</maxSizeSet>
+        <minSizeSet>false</minSizeSet>
+        <nameExplicitlySet>false</nameExplicitlySet>
+        <newEventsOnly>true</newEventsOnly>
+        <prefSizeSet>false</prefSizeSet>
+        <valid>false</valid>
+        <visible>true</visible>
+        <width>0</width>
+        <x>0</x>
+        <y>0</y>
+        <locale>en_US</locale>
+      </default>
+      <null/>
+      <java.awt.ComponentOrientation>
+        <orientation>7</orientation>
+      </java.awt.ComponentOrientation>
+      <null/>
+      <null/>
+    </java.awt.Component>
+    <java.awt.Container>
+      <default>
+        <ncomponents>0</ncomponents>
+        <component/>
+        <focusCycleRoot>false</focusCycleRoot>
+        <containerSerializedDataVersion>1</containerSerializedDataVersion>
+        <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+      </default>
+      <null/>
+      <null/>
+    </java.awt.Container>
+    <javax.swing.JComponent>
+      <default>
+        <alignmentX>0.0</alignmentX>
+        <alignmentY>0.0</alignmentY>
+        <autoscrolls>false</autoscrolls>
+        <flags>16384</flags>
+        <isAlignmentXSet>false</isAlignmentXSet>
+        <isAlignmentYSet>false</isAlignmentYSet>
+        <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+        <listenerList serialization="custom">
+          <javax.swing.event.EventListenerList>
+            <default/>
+            <null/>
+          </javax.swing.event.EventListenerList>
+        </listenerList>
+      </default>
+      <int>0</int>
+    </javax.swing.JComponent>
+    <Geometry.SketchComponent>
+      <default>
+        <BorderIn>false</BorderIn>
+        <Deleted>false</Deleted>
+        <Filled>false</Filled>
+        <Height>0</Height>
+        <Selected>false</Selected>
+        <Visible>true</Visible>
+        <Width>0</Width>
+        <hasFocus>false</hasFocus>
+        <isSelectBox>false</isSelectBox>
+        <isText>true</isText>
+        <Name>Text</Name>
+        <TopLeft>
+          <x>184</x>
+          <y>158</y>
+        </TopLeft>
+        <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+          <alpha>255</alpha>
+        </color>
+      </default>
+    </Geometry.SketchComponent>
+    <Geometry.TextComponent>
+      <default>
+        <Text>Enter Your Text Here</Text>
+        <font>
+          <posture class="null"/>
+          <weight class="null"/>
+          <family class="string">Dialog</family>
+          <width class="null"/>
+          <tracking class="null"/>
+          <transform class="null"/>
+          <superscript class="null"/>
+          <size class="float">15.0</size>
+        </font>
+      </default>
+    </Geometry.TextComponent>
+  </Geometry.TextComponent>
+  <Geometry.TextComponent serialization="custom">
+    <java.awt.Component>
+      <default>
+        <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+        <boundsOp>3</boundsOp>
+        <componentSerializedDataVersion>4</componentSerializedDataVersion>
+        <enabled>true</enabled>
+        <eventMask>4104</eventMask>
+        <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+        <focusable>true</focusable>
+        <height>0</height>
+        <ignoreRepaint>false</ignoreRepaint>
+        <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+        <isPacked>false</isPacked>
+        <maxSizeSet>false</maxSizeSet>
+        <minSizeSet>false</minSizeSet>
+        <nameExplicitlySet>false</nameExplicitlySet>
+        <newEventsOnly>true</newEventsOnly>
+        <prefSizeSet>false</prefSizeSet>
+        <valid>false</valid>
+        <visible>true</visible>
+        <width>0</width>
+        <x>0</x>
+        <y>0</y>
+        <locale reference="../../../../Geometry.TextComponent/java.awt.Component/default/locale"/>
+      </default>
+      <null/>
+      <java.awt.ComponentOrientation reference="../../../Geometry.TextComponent/java.awt.Component/java.awt.ComponentOrientation"/>
+      <null/>
+      <null/>
+    </java.awt.Component>
+    <java.awt.Container>
+      <default>
+        <ncomponents>0</ncomponents>
+        <component reference="../../../../Geometry.TextComponent/java.awt.Container/default/component"/>
+        <focusCycleRoot>false</focusCycleRoot>
+        <containerSerializedDataVersion>1</containerSerializedDataVersion>
+        <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+      </default>
+      <null/>
+      <null/>
+    </java.awt.Container>
+    <javax.swing.JComponent>
+      <default>
+        <alignmentX>0.0</alignmentX>
+        <alignmentY>0.0</alignmentY>
+        <autoscrolls>false</autoscrolls>
+        <flags>16384</flags>
+        <isAlignmentXSet>false</isAlignmentXSet>
+        <isAlignmentYSet>false</isAlignmentYSet>
+        <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+        <listenerList serialization="custom">
+          <javax.swing.event.EventListenerList>
+            <default/>
+            <null/>
+          </javax.swing.event.EventListenerList>
+        </listenerList>
+      </default>
+      <int>0</int>
+    </javax.swing.JComponent>
+    <Geometry.SketchComponent>
+      <default>
+        <BorderIn>false</BorderIn>
+        <Deleted>false</Deleted>
+        <Filled>false</Filled>
+        <Height>0</Height>
+        <Selected>false</Selected>
+        <Visible>true</Visible>
+        <Width>0</Width>
+        <hasFocus>false</hasFocus>
+        <isSelectBox>false</isSelectBox>
+        <isText>true</isText>
+        <Name>Text</Name>
+        <TopLeft>
+          <x>290</x>
+          <y>295</y>
+        </TopLeft>
+        <color reference="../../../../Geometry.TextComponent/Geometry.SketchComponent/default/color"/>
+      </default>
+    </Geometry.SketchComponent>
+    <Geometry.TextComponent>
+      <default>
+        <Text>Ahmed Shawky</Text>
+        <font>
+          <posture class="null"/>
+          <weight class="null"/>
+          <family class="string">Microsoft YaHei Bold</family>
+          <width class="null"/>
+          <tracking class="null"/>
+          <transform class="null"/>
+          <superscript class="null"/>
+          <size class="float">18.0</size>
+        </font>
+      </default>
+    </Geometry.TextComponent>
+  </Geometry.TextComponent>
+  <Geometry.Circle serialization="custom">
+    <java.awt.Component>
+      <default>
+        <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+        <boundsOp>3</boundsOp>
+        <componentSerializedDataVersion>4</componentSerializedDataVersion>
+        <enabled>true</enabled>
+        <eventMask>4104</eventMask>
+        <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+        <focusable>true</focusable>
+        <height>514</height>
+        <ignoreRepaint>false</ignoreRepaint>
+        <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+        <isPacked>false</isPacked>
+        <maxSizeSet>false</maxSizeSet>
+        <minSizeSet>false</minSizeSet>
+        <nameExplicitlySet>false</nameExplicitlySet>
+        <newEventsOnly>true</newEventsOnly>
+        <prefSizeSet>false</prefSizeSet>
+        <valid>true</valid>
+        <visible>true</visible>
+        <width>514</width>
+        <x>8</x>
+        <y>8</y>
+        <locale>en_US</locale>
+        <peerFont class="javax.swing.plaf.FontUIResource">
+          <posture class="null"/>
+          <weight class="null"/>
+          <family class="string">Dialog</family>
+          <width class="null"/>
+          <tracking class="null"/>
+          <transform class="null"/>
+          <superscript class="null"/>
+          <size class="null"/>
+        </peerFont>
+      </default>
+      <null/>
+      <java.awt.ComponentOrientation>
+        <orientation>7</orientation>
+      </java.awt.ComponentOrientation>
+      <null/>
+      <null/>
+    </java.awt.Component>
+    <java.awt.Container>
+      <default>
+        <ncomponents>0</ncomponents>
+        <component reference="../../../../Geometry.TextComponent/java.awt.Container/default/component"/>
+        <focusCycleRoot>false</focusCycleRoot>
+        <containerSerializedDataVersion>1</containerSerializedDataVersion>
+        <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+      </default>
+      <null/>
+      <null/>
+    </java.awt.Container>
+    <javax.swing.JComponent>
+      <default>
+        <alignmentX>0.0</alignmentX>
+        <alignmentY>0.0</alignmentY>
+        <autoscrolls>false</autoscrolls>
+        <flags>16384</flags>
+        <isAlignmentXSet>false</isAlignmentXSet>
+        <isAlignmentYSet>false</isAlignmentYSet>
+        <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+        <listenerList serialization="custom">
+          <javax.swing.event.EventListenerList>
+            <default/>
+            <null/>
+          </javax.swing.event.EventListenerList>
+        </listenerList>
+      </default>
+      <int>0</int>
+    </javax.swing.JComponent>
+    <Geometry.SketchComponent>
+      <default>
+        <BorderIn>true</BorderIn>
+        <Deleted>false</Deleted>
+        <Filled>true</Filled>
+        <Height>514</Height>
+        <Selected>false</Selected>
+        <Visible>true</Visible>
+        <Width>514</Width>
+        <hasFocus>false</hasFocus>
+        <isSelectBox>false</isSelectBox>
+        <isText>false</isText>
+        <Name>Circle</Name>
+        <TopLeft>
+          <x>113</x>
+          <y>-9</y>
+        </TopLeft>
+        <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+          <alpha>255</alpha>
+        </color>
+      </default>
+    </Geometry.SketchComponent>
+    <Geometry.ShapeComponent>
+      <default>
+        <isLine>false</isLine>
+        <isRegular>true</isRegular>
+        <res serialization="custom">
+          <java.awt.Component>
+            <default>
+              <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+              <boundsOp>3</boundsOp>
+              <componentSerializedDataVersion>4</componentSerializedDataVersion>
+              <enabled>true</enabled>
+              <eventMask>4104</eventMask>
+              <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+              <focusable>true</focusable>
+              <height>530</height>
+              <ignoreRepaint>false</ignoreRepaint>
+              <isFocusTraversableOverridden>1</isFocusTraversableOverridden>
+              <isPacked>false</isPacked>
+              <maxSizeSet>false</maxSizeSet>
+              <minSizeSet>false</minSizeSet>
+              <nameExplicitlySet>false</nameExplicitlySet>
+              <newEventsOnly>true</newEventsOnly>
+              <prefSizeSet>false</prefSizeSet>
+              <valid>true</valid>
+              <visible>true</visible>
+              <width>530</width>
+              <x>105</x>
+              <y>-17</y>
+              <cursor>
+                <type>0</type>
+                <name>Default Cursor</name>
+              </cursor>
+              <locale reference="../../../../../../java.awt.Component/default/locale"/>
+              <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../../java.awt.Component/default/peerFont"/>
+            </default>
+            <null/>
+            <java.awt.ComponentOrientation reference="../../../../../java.awt.Component/java.awt.ComponentOrientation"/>
+            <null/>
+            <null/>
+          </java.awt.Component>
+          <java.awt.Container>
+            <default>
+              <ncomponents>1</ncomponents>
+              <component>
+                <Geometry.Circle reference="../../../../../../.."/>
+              </component>
+              <layoutMgr class="java.awt.BorderLayout">
+                <hgap>0</hgap>
+                <vgap>0</vgap>
+                <center class="Geometry.Circle" reference="../../../../../../.."/>
+              </layoutMgr>
+              <focusCycleRoot>false</focusCycleRoot>
+              <containerSerializedDataVersion>1</containerSerializedDataVersion>
+              <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+            </default>
+            <null/>
+            <null/>
+          </java.awt.Container>
+          <javax.swing.JComponent>
+            <default>
+              <alignmentX>0.0</alignmentX>
+              <alignmentY>0.0</alignmentY>
+              <autoscrolls>false</autoscrolls>
+              <flags>16384</flags>
+              <isAlignmentXSet>false</isAlignmentXSet>
+              <isAlignmentYSet>false</isAlignmentYSet>
+              <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+              <border class="Geometry.ResizableBorder">
+                <dist>8</dist>
+                <locations>
+                  <int>1</int>
+                  <int>5</int>
+                  <int>7</int>
+                  <int>3</int>
+                  <int>8</int>
+                  <int>2</int>
+                  <int>6</int>
+                  <int>4</int>
+                </locations>
+                <cursors>
+                  <int>8</int>
+                  <int>9</int>
+                  <int>10</int>
+                  <int>11</int>
+                  <int>6</int>
+                  <int>7</int>
+                  <int>4</int>
+                  <int>5</int>
+                </cursors>
+              </border>
+              <listenerList serialization="custom">
+                <javax.swing.event.EventListenerList>
+                  <default/>
+                  <null/>
+                </javax.swing.event.EventListenerList>
+              </listenerList>
+            </default>
+            <int>0</int>
+          </javax.swing.JComponent>
+          <Geometry.Resizable>
+            <default>
+              <dx>0</dx>
+              <dy>1</dy>
+              <KeyAction class="Geometry.Resizable$1">
+                <outer-class reference="../../../.."/>
+              </KeyAction>
+              <Shape class="Geometry.Circle" reference="../../../../../.."/>
+              <resizeListener class="Geometry.Resizable$2">
+                <cursor>13</cursor>
+                <startPos>
+                  <x>421</x>
+                  <y>245</y>
+                </startPos>
+                <outer-class reference="../../../.."/>
+              </resizeListener>
+            </default>
+          </Geometry.Resizable>
+        </res>
+      </default>
+    </Geometry.ShapeComponent>
+  </Geometry.Circle>
+  <Geometry.Circle serialization="custom">
+    <java.awt.Component>
+      <default>
+        <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+        <boundsOp>3</boundsOp>
+        <componentSerializedDataVersion>4</componentSerializedDataVersion>
+        <enabled>true</enabled>
+        <eventMask>4104</eventMask>
+        <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+        <focusable>true</focusable>
+        <height>0</height>
+        <ignoreRepaint>false</ignoreRepaint>
+        <isFocusTraversableOverridden>1</isFocusTraversableOverridden>
+        <isPacked>false</isPacked>
+        <maxSizeSet>false</maxSizeSet>
+        <minSizeSet>false</minSizeSet>
+        <nameExplicitlySet>false</nameExplicitlySet>
+        <newEventsOnly>true</newEventsOnly>
+        <prefSizeSet>false</prefSizeSet>
+        <valid>true</valid>
+        <visible>true</visible>
+        <width>0</width>
+        <x>8</x>
+        <y>8</y>
+        <locale>en_US</locale>
+        <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../Geometry.Circle/java.awt.Component/default/peerFont"/>
+      </default>
+      <null/>
+      <java.awt.ComponentOrientation>
+        <orientation>7</orientation>
+      </java.awt.ComponentOrientation>
+      <null/>
+      <null/>
+    </java.awt.Component>
+    <java.awt.Container>
+      <default>
+        <ncomponents>0</ncomponents>
+        <component reference="../../../../Geometry.TextComponent/java.awt.Container/default/component"/>
+        <focusCycleRoot>false</focusCycleRoot>
+        <containerSerializedDataVersion>1</containerSerializedDataVersion>
+        <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+      </default>
+      <null/>
+      <null/>
+    </java.awt.Container>
+    <javax.swing.JComponent>
+      <default>
+        <alignmentX>0.0</alignmentX>
+        <alignmentY>0.0</alignmentY>
+        <autoscrolls>false</autoscrolls>
+        <flags>16384</flags>
+        <isAlignmentXSet>false</isAlignmentXSet>
+        <isAlignmentYSet>false</isAlignmentYSet>
+        <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+        <listenerList serialization="custom">
+          <javax.swing.event.EventListenerList>
+            <default/>
+            <null/>
+          </javax.swing.event.EventListenerList>
+        </listenerList>
+      </default>
+      <int>0</int>
+    </javax.swing.JComponent>
+    <Geometry.SketchComponent>
+      <default>
+        <BorderIn>true</BorderIn>
+        <Deleted>false</Deleted>
+        <Filled>false</Filled>
+        <Height>0</Height>
+        <Selected>false</Selected>
+        <Visible>true</Visible>
+        <Width>0</Width>
+        <hasFocus>false</hasFocus>
+        <isSelectBox>false</isSelectBox>
+        <isText>false</isText>
+        <Name>Circle</Name>
+        <TopLeft>
+          <x>637</x>
+          <y>197</y>
+        </TopLeft>
+      </default>
+    </Geometry.SketchComponent>
+    <Geometry.ShapeComponent>
+      <default>
+        <isLine>false</isLine>
+        <isRegular>true</isRegular>
+        <res serialization="custom">
+          <java.awt.Component>
+            <default>
+              <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+              <boundsOp>3</boundsOp>
+              <componentSerializedDataVersion>4</componentSerializedDataVersion>
+              <enabled>true</enabled>
+              <eventMask>4104</eventMask>
+              <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+              <focusable>true</focusable>
+              <height>16</height>
+              <ignoreRepaint>false</ignoreRepaint>
+              <isFocusTraversableOverridden>1</isFocusTraversableOverridden>
+              <isPacked>false</isPacked>
+              <maxSizeSet>false</maxSizeSet>
+              <minSizeSet>false</minSizeSet>
+              <nameExplicitlySet>false</nameExplicitlySet>
+              <newEventsOnly>true</newEventsOnly>
+              <prefSizeSet>false</prefSizeSet>
+              <valid>true</valid>
+              <visible>true</visible>
+              <width>16</width>
+              <x>629</x>
+              <y>189</y>
+              <cursor>
+                <type>0</type>
+                <name>Default Cursor</name>
+              </cursor>
+              <locale reference="../../../../../../java.awt.Component/default/locale"/>
+              <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../../../Geometry.Circle/java.awt.Component/default/peerFont"/>
+            </default>
+            <null/>
+            <java.awt.ComponentOrientation reference="../../../../../java.awt.Component/java.awt.ComponentOrientation"/>
+            <null/>
+            <null/>
+          </java.awt.Component>
+          <java.awt.Container>
+            <default>
+              <ncomponents>1</ncomponents>
+              <component>
+                <Geometry.Circle reference="../../../../../../.."/>
+              </component>
+              <layoutMgr class="java.awt.BorderLayout">
+                <hgap>0</hgap>
+                <vgap>0</vgap>
+                <center class="Geometry.Circle" reference="../../../../../../.."/>
+              </layoutMgr>
+              <focusCycleRoot>false</focusCycleRoot>
+              <containerSerializedDataVersion>1</containerSerializedDataVersion>
+              <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+            </default>
+            <null/>
+            <null/>
+          </java.awt.Container>
+          <javax.swing.JComponent>
+            <default>
+              <alignmentX>0.0</alignmentX>
+              <alignmentY>0.0</alignmentY>
+              <autoscrolls>false</autoscrolls>
+              <flags>16384</flags>
+              <isAlignmentXSet>false</isAlignmentXSet>
+              <isAlignmentYSet>false</isAlignmentYSet>
+              <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+              <border class="Geometry.ResizableBorder">
+                <dist>8</dist>
+                <locations>
+                  <int>1</int>
+                  <int>5</int>
+                  <int>7</int>
+                  <int>3</int>
+                  <int>8</int>
+                  <int>2</int>
+                  <int>6</int>
+                  <int>4</int>
+                </locations>
+                <cursors>
+                  <int>8</int>
+                  <int>9</int>
+                  <int>10</int>
+                  <int>11</int>
+                  <int>6</int>
+                  <int>7</int>
+                  <int>4</int>
+                  <int>5</int>
+                </cursors>
+              </border>
+              <listenerList serialization="custom">
+                <javax.swing.event.EventListenerList>
+                  <default/>
+                  <null/>
+                </javax.swing.event.EventListenerList>
+              </listenerList>
+            </default>
+            <int>0</int>
+          </javax.swing.JComponent>
+          <Geometry.Resizable>
+            <default>
+              <dx>0</dx>
+              <dy>0</dy>
+              <KeyAction class="Geometry.Resizable$1">
+                <outer-class reference="../../../.."/>
+              </KeyAction>
+              <Shape class="Geometry.Circle" reference="../../../../../.."/>
+              <resizeListener class="Geometry.Resizable$2">
+                <cursor>0</cursor>
+                <outer-class reference="../../../.."/>
+              </resizeListener>
+            </default>
+          </Geometry.Resizable>
+        </res>
+      </default>
+    </Geometry.ShapeComponent>
+  </Geometry.Circle>
+  <Geometry.Circle serialization="custom">
+    <java.awt.Component>
+      <default>
+        <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+        <boundsOp>3</boundsOp>
+        <componentSerializedDataVersion>4</componentSerializedDataVersion>
+        <enabled>true</enabled>
+        <eventMask>4104</eventMask>
+        <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+        <focusable>true</focusable>
+        <height>0</height>
+        <ignoreRepaint>false</ignoreRepaint>
+        <isFocusTraversableOverridden>1</isFocusTraversableOverridden>
+        <isPacked>false</isPacked>
+        <maxSizeSet>false</maxSizeSet>
+        <minSizeSet>false</minSizeSet>
+        <nameExplicitlySet>false</nameExplicitlySet>
+        <newEventsOnly>true</newEventsOnly>
+        <prefSizeSet>false</prefSizeSet>
+        <valid>true</valid>
+        <visible>true</visible>
+        <width>0</width>
+        <x>8</x>
+        <y>8</y>
+        <locale>en_US</locale>
+        <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../Geometry.Circle/java.awt.Component/default/peerFont"/>
+      </default>
+      <null/>
+      <java.awt.ComponentOrientation>
+        <orientation>7</orientation>
+      </java.awt.ComponentOrientation>
+      <null/>
+      <null/>
+    </java.awt.Component>
+    <java.awt.Container>
+      <default>
+        <ncomponents>0</ncomponents>
+        <component reference="../../../../Geometry.TextComponent/java.awt.Container/default/component"/>
+        <focusCycleRoot>false</focusCycleRoot>
+        <containerSerializedDataVersion>1</containerSerializedDataVersion>
+        <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+      </default>
+      <null/>
+      <null/>
+    </java.awt.Container>
+    <javax.swing.JComponent>
+      <default>
+        <alignmentX>0.0</alignmentX>
+        <alignmentY>0.0</alignmentY>
+        <autoscrolls>false</autoscrolls>
+        <flags>16384</flags>
+        <isAlignmentXSet>false</isAlignmentXSet>
+        <isAlignmentYSet>false</isAlignmentYSet>
+        <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+        <listenerList serialization="custom">
+          <javax.swing.event.EventListenerList>
+            <default/>
+            <null/>
+          </javax.swing.event.EventListenerList>
+        </listenerList>
+      </default>
+      <int>0</int>
+    </javax.swing.JComponent>
+    <Geometry.SketchComponent>
+      <default>
+        <BorderIn>true</BorderIn>
+        <Deleted>false</Deleted>
+        <Filled>false</Filled>
+        <Height>0</Height>
+        <Selected>false</Selected>
+        <Visible>true</Visible>
+        <Width>0</Width>
+        <hasFocus>false</hasFocus>
+        <isSelectBox>false</isSelectBox>
+        <isText>false</isText>
+        <Name>Circle</Name>
+        <TopLeft>
+          <x>636</x>
+          <y>192</y>
+        </TopLeft>
+      </default>
+    </Geometry.SketchComponent>
+    <Geometry.ShapeComponent>
+      <default>
+        <isLine>false</isLine>
+        <isRegular>true</isRegular>
+        <res serialization="custom">
+          <java.awt.Component>
+            <default>
+              <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+              <boundsOp>3</boundsOp>
+              <componentSerializedDataVersion>4</componentSerializedDataVersion>
+              <enabled>true</enabled>
+              <eventMask>4104</eventMask>
+              <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+              <focusable>true</focusable>
+              <height>16</height>
+              <ignoreRepaint>false</ignoreRepaint>
+              <isFocusTraversableOverridden>1</isFocusTraversableOverridden>
+              <isPacked>false</isPacked>
+              <maxSizeSet>false</maxSizeSet>
+              <minSizeSet>false</minSizeSet>
+              <nameExplicitlySet>false</nameExplicitlySet>
+              <newEventsOnly>true</newEventsOnly>
+              <prefSizeSet>false</prefSizeSet>
+              <valid>true</valid>
+              <visible>true</visible>
+              <width>16</width>
+              <x>628</x>
+              <y>184</y>
+              <locale reference="../../../../../../java.awt.Component/default/locale"/>
+              <peerFont class="javax.swing.plaf.FontUIResource" reference="../../../../../../../Geometry.Circle/java.awt.Component/default/peerFont"/>
+            </default>
+            <null/>
+            <java.awt.ComponentOrientation reference="../../../../../java.awt.Component/java.awt.ComponentOrientation"/>
+            <null/>
+            <null/>
+          </java.awt.Component>
+          <java.awt.Container>
+            <default>
+              <ncomponents>1</ncomponents>
+              <component>
+                <Geometry.Circle reference="../../../../../../.."/>
+              </component>
+              <layoutMgr class="java.awt.BorderLayout">
+                <hgap>0</hgap>
+                <vgap>0</vgap>
+                <center class="Geometry.Circle" reference="../../../../../../.."/>
+              </layoutMgr>
+              <focusCycleRoot>false</focusCycleRoot>
+              <containerSerializedDataVersion>1</containerSerializedDataVersion>
+              <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+            </default>
+            <null/>
+            <null/>
+          </java.awt.Container>
+          <javax.swing.JComponent>
+            <default>
+              <alignmentX>0.0</alignmentX>
+              <alignmentY>0.0</alignmentY>
+              <autoscrolls>false</autoscrolls>
+              <flags>16384</flags>
+              <isAlignmentXSet>false</isAlignmentXSet>
+              <isAlignmentYSet>false</isAlignmentYSet>
+              <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+              <border class="Geometry.ResizableBorder">
+                <dist>8</dist>
+                <locations>
+                  <int>1</int>
+                  <int>5</int>
+                  <int>7</int>
+                  <int>3</int>
+                  <int>8</int>
+                  <int>2</int>
+                  <int>6</int>
+                  <int>4</int>
+                </locations>
+                <cursors>
+                  <int>8</int>
+                  <int>9</int>
+                  <int>10</int>
+                  <int>11</int>
+                  <int>6</int>
+                  <int>7</int>
+                  <int>4</int>
+                  <int>5</int>
+                </cursors>
+              </border>
+              <listenerList serialization="custom">
+                <javax.swing.event.EventListenerList>
+                  <default/>
+                  <null/>
+                </javax.swing.event.EventListenerList>
+              </listenerList>
+            </default>
+            <int>0</int>
+          </javax.swing.JComponent>
+          <Geometry.Resizable>
+            <default>
+              <dx>0</dx>
+              <dy>0</dy>
+              <KeyAction class="Geometry.Resizable$1">
+                <outer-class reference="../../../.."/>
+              </KeyAction>
+              <Shape class="Geometry.Circle" reference="../../../../../.."/>
+              <resizeListener class="Geometry.Resizable$2">
+                <cursor>0</cursor>
+                <outer-class reference="../../../.."/>
+              </resizeListener>
+            </default>
+          </Geometry.Resizable>
+        </res>
+      </default>
+    </Geometry.ShapeComponent>
+  </Geometry.Circle>
+  <Geometry.TextComponent serialization="custom">
+    <java.awt.Component>
+      <default>
+        <autoFocusTransferOnDisposal>true</autoFocusTransferOnDisposal>
+        <boundsOp>3</boundsOp>
+        <componentSerializedDataVersion>4</componentSerializedDataVersion>
+        <enabled>true</enabled>
+        <eventMask>4104</eventMask>
+        <focusTraversalKeysEnabled>true</focusTraversalKeysEnabled>
+        <focusable>true</focusable>
+        <height>0</height>
+        <ignoreRepaint>false</ignoreRepaint>
+        <isFocusTraversableOverridden>0</isFocusTraversableOverridden>
+        <isPacked>false</isPacked>
+        <maxSizeSet>false</maxSizeSet>
+        <minSizeSet>false</minSizeSet>
+        <nameExplicitlySet>false</nameExplicitlySet>
+        <newEventsOnly>true</newEventsOnly>
+        <prefSizeSet>false</prefSizeSet>
+        <valid>false</valid>
+        <visible>true</visible>
+        <width>0</width>
+        <x>0</x>
+        <y>0</y>
+        <locale>en_US</locale>
+      </default>
+      <null/>
+      <java.awt.ComponentOrientation>
+        <orientation>7</orientation>
+      </java.awt.ComponentOrientation>
+      <null/>
+      <null/>
+    </java.awt.Component>
+    <java.awt.Container>
+      <default>
+        <ncomponents>0</ncomponents>
+        <component reference="../../../../Geometry.TextComponent/java.awt.Container/default/component"/>
+        <focusCycleRoot>false</focusCycleRoot>
+        <containerSerializedDataVersion>1</containerSerializedDataVersion>
+        <focusTraversalPolicyProvider>false</focusTraversalPolicyProvider>
+      </default>
+      <null/>
+      <null/>
+    </java.awt.Container>
+    <javax.swing.JComponent>
+      <default>
+        <alignmentX>0.0</alignmentX>
+        <alignmentY>0.0</alignmentY>
+        <autoscrolls>false</autoscrolls>
+        <flags>16384</flags>
+        <isAlignmentXSet>false</isAlignmentXSet>
+        <isAlignmentYSet>false</isAlignmentYSet>
+        <verifyInputWhenFocusTarget>true</verifyInputWhenFocusTarget>
+        <listenerList serialization="custom">
+          <javax.swing.event.EventListenerList>
+            <default/>
+            <null/>
+          </javax.swing.event.EventListenerList>
+        </listenerList>
+      </default>
+      <int>0</int>
+    </javax.swing.JComponent>
+    <Geometry.SketchComponent>
+      <default>
+        <BorderIn>false</BorderIn>
+        <Deleted>false</Deleted>
+        <Filled>false</Filled>
+        <Height>0</Height>
+        <Selected>false</Selected>
+        <Visible>true</Visible>
+        <Width>0</Width>
+        <hasFocus>false</hasFocus>
+        <isSelectBox>false</isSelectBox>
+        <isText>true</isText>
+        <Name>Text</Name>
+        <TopLeft>
+          <x>424</x>
+          <y>110</y>
+        </TopLeft>
+        <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+          <alpha>255</alpha>
+        </color>
+      </default>
+    </Geometry.SketchComponent>
+    <Geometry.TextComponent>
+      <default>
+        <Text>Ahmed Shawky</Text>
+        <font>
+          <posture class="null"/>
+          <weight class="float">2.0</weight>
+          <family class="string">Chiller</family>
+          <width class="null"/>
+          <tracking class="null"/>
+          <transform class="null"/>
+          <superscript class="null"/>
+          <size class="float">15.0</size>
+        </font>
+      </default>
+    </Geometry.TextComponent>
+  </Geometry.TextComponent>
+</vector>

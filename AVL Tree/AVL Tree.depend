@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1427114443 source:e:\csed\javaz\c++ projects\avl tree\main.cpp
+	<bits/stdc++.h>
+	"Dictionary.h"
+
+1426930905 source:e:\csed\javaz\c++ projects\avl tree\node.cpp
+	"node.h"
+
+1426704341 e:\csed\javaz\c++ projects\avl tree\node.h
+	<iostream>
+
+1427131724 source:e:\csed\javaz\c++ projects\avl tree\avltree.cpp
+	"AVLTree.h"
+	<stack>
+
+1426976414 e:\csed\javaz\c++ projects\avl tree\avltree.h
+	"node.cpp"
+
+1426930905 e:\csed\javaz\c++ projects\avl tree\node.cpp
+	"node.h"
+
+1427131724 e:\csed\javaz\c++ projects\avl tree\avltree.cpp
+	"AVLTree.h"
+	<stack>
+
+1427117905 source:e:\csed\javaz\c++ projects\avl tree\dictionary.cpp
+	"Dictionary.h"
+	<fstream>
+
+1427053903 e:\csed\javaz\c++ projects\avl tree\dictionary.h
+	"AVLTree.cpp"
+
+1427053026 e:\csed\javaz\c++ projects\avl tree\dictionary.cpp
+	"Dictionary.h"
+	<fstream>
+

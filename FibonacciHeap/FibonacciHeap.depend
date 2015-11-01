@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1431781982 source:e:\csed\javaz\c++ projects\fibonacciheap\fibonacciheap.cpp
+	"FibonacciHeap.h"
+	"DList.cpp"
+	<iostream>
+
+1431781203 e:\csed\javaz\c++ projects\fibonacciheap\fibonacciheap.h
+	"Node.h"
+	<unordered_map>
+	"DList.h"
+	<unordered_set>
+
+1431783072 e:\csed\javaz\c++ projects\fibonacciheap\node.h
+	<vector>
+	<cstddef>
+
+1431782923 source:e:\csed\javaz\c++ projects\fibonacciheap\node.cpp
+	"Node.h"
+
+1431720985 source:e:\csed\javaz\c++ projects\fibonacciheap\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	"FibonacciHeap.cpp"
+
+1431783111 e:\csed\javaz\c++ projects\fibonacciheap\fibonacciheap.cpp
+	"FibonacciHeap.h"
+	"DList.cpp"
+	"Node.cpp"
+	<iostream>
+
+1431782923 e:\csed\javaz\c++ projects\fibonacciheap\node.cpp
+	"Node.h"
+
+1431783038 e:\csed\javaz\c++ projects\fibonacciheap\dlist.h
+	"Node.h"
+
+1431783053 e:\csed\javaz\c++ projects\fibonacciheap\dlist.cpp
+	"DList.h"
+	"Node.h"
+	<cstddef>
+
+1431783053 source:e:\csed\javaz\c++ projects\fibonacciheap\dlist.cpp
+	"DList.h"
+	"Node.h"
+	<cstddef>
+
