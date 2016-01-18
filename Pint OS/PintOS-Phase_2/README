@@ -1,0 +1,288 @@
+		     +---------------------------+
+       	     |		CS 140		         |
+		     | PROJECT 2: USER PROGRAMS  |
+		     | 	   DESIGN DOCUMENT       |
+		     +---------------------------+
+
+---- GROUP  ----
+group number : 19
+
+Ahmed Shawky Anwar <ahmedshawkyanwar@gamil.com> ID: 11
+Hassan Ahmed Hassan <gaarahassan@gmail.com> ID: 26
+Mahmoud Aladdin <m.aladdin.gn@gmail.com> ID: 65
+
+
+---- PRELIMINARIES ----
+
+>> If you have any preliminary comments on your submission, notes for the
+>> TAs, or extra credit, please give them here.
+
+>> Please cite any offline or online sources you consulted while
+>> preparing your submission, other than the Pintos documentation, course
+>> text, lecture notes, and course staff.
+
+			   	  ARGUMENT PASSING
+			 	  ================
+
+---- DATA STRUCTURES ----
+
+>> A1: Copy here the declaration of each new or changed `struct' or
+>> `struct' member, global or static variable, `typedef', or
+>> enumeration.  Identify the purpose of each in 25 words or less.
+
+  char thread_params_buffer[200];          /* To save the string sent to process_execute() in 
+order to extract the parameters to be added to the stack */
+
+
+
+
+
+
+
+
+---- ALGORITHMS ----
+
+>> A2: Briefly describe how you implemented argument parsing.  How do
+>> you arrange for the elements of argv[] to be in the right order?
+>> How do you avoid overflowing the stack page?
+
+=> After the setup_stack() is finished and the esp is set to PHYS_BASE the function add_params_to_stack() is called. First it splits the string stored in the thread_params_buffer on white spaces then for each string found, it gets copied to the stack and the esp is decremented by the string size. We also store the address of each string while doing this process.
+
+Then we add the align characters to make the addresses of the strings in a modulo 4 address.
+
+Afterwards, a null terminator is added to the stack followed by the addresses of every string address.
+
+At the end, the address of the first char * is added to the stack followed by the arguments count and the return address.
+
+=> If the esp address reached the top of the kernel space it will attempt to write to the kernel space resulting in a page_fault which will cause the thread to exit(-1).
+
+
+---- RATIONALE ----
+
+>> A3: Why does Pintos implement strtok_r() but not strtok()?
+ 
+=> The difference between the strtok_r() in pintos and that in ANSI C, is that an address is passed to the strtok_r() in order to save the start location of the tokenized word in this call.
+
+>> A4: In Pintos, the kernel separates commands into a executable name
+>> and arguments.  In Unix-like systems, the shell does this
+>> separation.  Identify at least two advantages of the Unix approach.
+
+=> The Unix approach verifies the the arguments in the shell and sends them to the kernel reducing the time of the kernel processing and introduces robust checking.
+
+
+
+
+			     SYSTEM CALLS
+			     ============
+
+---- DATA STRUCTURES ----
+
+>> B1: Copy here the declaration of each new or changed `struct' or
+>> `struct' member, global or static variable, `typedef', or
+>> enumeration.  Identify the purpose of each in 25 words or less.
+In thread.h
+typedef int pid_t;                      /*defiining the type of pid_t*/
+
+struct thread
+  {
+	int file_index;                          /* Index of the file to be opened next
+                                          	               incremented when a file is opened by
+                                                               this thread */
+
+	struct list opened_files;          /*   List of the opened_files by this
+                                                                thread */
+
+   	 int return_status;                   /*  Return status of the child thread */
+  	 int child_return_status;         /*  A list to save the children of this
+                                          		   thread */
+    	struct list child_list;                  /*  List to have the childs of this
+                                                                process */
+   	 pid_t waiting_on_process;     /*  pid of the process that this thread
+                                                                   waiting on */
+   	 struct semaphore wsem;        /*  Semaphore to wait on in the processes
+                                          		       wait */
+    	struct semaphore sync_sema;   /* Semaphore to synchronize the
+                                                                 communication between the child
+                                                                 thread and the current thread */
+
+   	 struct list_elem child_elem;       /* List element for child threads */
+ 	 struct thread  *parent;                /* tid of parent thread */
+   	 struct file *exe_file;                     /* Pointer to the executable file of The
+                                                                    current thread */
+
+  };
+
+
+
+in filestruct.h
+/* A data structure added containing the node of the file added in threads containing a pointer to a file the descriptor if that file and a list node to can contain it in a list*/		
+struct thrd_file_struct
+{
+	int file_descrip;				 /* Descriptor if this file */
+	struct file * file_opened;                       /* Pointer to this file */
+	struct list_elem file_elem;                    /* List element for this file in
+						    the opened_files list */
+};
+
+In process.c
+
+struct semaphore *toWake;			/* A variable to store the address of the parent
+   thread semaphore in order to wake it up 
+   after the child process loads its executable */
+
+bool child_succeeded;				/* A global boolean that indicates whether the child 
+						   process successfully loaded its executable or not */
+in syscall.c
+static struct lock file_lock;			/*to ensure synchronization during 
+						system calls */
+
+
+>> B2: Describe how file descriptors are associated with open files.
+>> Are file descriptors unique within the entire OS or just within a
+>> single process?
+
+=> Every process has a variable called (file_indx) which counts the number of opened files starting from 2 (as 0 and 1 are for the console read and write) and each time a file is opened it’s assigned the current value of the file_indx and is added to the list of opened files which is in the thread’s struct.
+=> file descriptors are unique within a single process as each process has its own count, this count refers to a file opened within this process.
+
+
+---- ALGORITHMS ----
+
+>> B3: Describe your code for reading and writing user data from the
+>> kernel.
+
+
+reading:
+=> first, we check the file descriptor, if it’s either 0 or 1 ,then it’s either a STDOUT_FILENO or STDIN_FILENO.otherwise,The argument is taken from the cmd then sent to the parser which parse it to build the stack as required in the statement.then use file_read system call to read the file .
+
+writing:
+=> As reading,we check the file descriptor, if it’s either 0 or 1 ,then it’s either a STDOUT_FILENO or STDIN_FILENO. otherwise, we use the file descriptor to get the file and use file_write system call to write the contents of the buffer to the file.
+
+>> B4: Suppose a system call causes a full page (4,096 bytes) of data
+>> to be copied from user space into the kernel.  What is the least
+>> and the greatest possible number of inspections of the page table
+>> (e.g. calls to pagedir_get_page()) that might result?  What about
+>> for a system call that only copies 2 bytes of data?  Is there room
+>> for improvement in these numbers, and how much?
+
+Copying a full page:
+=> Greatest number of inspections of the page table is 2 
+=> Least number of inspections of the page table is 1
+
+
+Copying 2 bytes:
+=> Greatest number of inspections of the page table is 2 
+=> Least number of inspections of the page table is 1
+
+>> B5: Briefly describe your implementation of the "wait" system call
+>> and how it interacts with process termination.
+
+=>we added a  semaphore in the thread struct (wsem) and also added a list to add all the children of this thread to the list, when a wait call is used then we check that the given thread is a child of the current running thread using it’s tid.if it a child of the current thread then sema_down(wsem) is used to make the current thread wait for the child thread is exited. when it exits it signals to the father thread to wake up. 
+
+>> B6: Any access to user program memory at a user-specified address
+>> can fail due to a bad pointer value.  Such accesses must cause the
+>> process to be terminated.  System calls are fraught with such
+>> accesses, e.g. a "write" system call requires reading the system
+>> call number from the user stack, then each of the call's three
+>> arguments, then an arbitrary amount of user memory, and any of
+>> these can fail at any point.  This poses a design and
+>> error-handling problem: how do you best avoid obscuring the primary
+>> function of code in a morass of error-handling?  Furthermore, when
+>> an error is detected, how do you ensure that all temporarily
+>> allocated resources (locks, buffers, etc.) are freed?  In a few
+>> paragraphs, describe the strategy or strategies you adopted for
+>> managing these issues.  Give an example.
+
+=> We avoid obscuring the main function of the code by prechecking the esp pointer and the arguments if they are null or out of the user space before entering the system call for example the read and write functions after checking the esp we determine which system call is being called we check each one of the their three arguments then in the function itself we check if the buffer start and end is in the user space.
+
+=> When an error occur we free the current lock then call exit(-1) which terminates the running process calling process_exit in which we clear the memory by freeing pointers releasing locks and waking up parents if the parent is waiting for this process.
+
+
+---- SYNCHRONIZATION ----
+
+>> B7: The "exec" system call returns -1 if loading the new executable
+>> fails, so it cannot return before the new executable has completed
+>> loading.  How does your code ensure this?  How is the load
+>> success/failure status passed back to the thread that calls "exec"?
+
+=>using a semaphore to make sure that the function doesn't return until the new executable in already loaded.when the thread finishes execution it signals to make the parent thread return.
+
+>> B8: Consider parent process P with child process C.  How do you
+>> ensure proper synchronization and avoid race conditions when P
+>> calls wait(C) before C exits?  After C exits?  How do you ensure
+>> that all resources are freed in each case?  How about when P
+>> terminates without waiting, before C exits?  After C exits?  Are
+>> there any special cases?
+
+=> When P calls wait(C) before C exits: it sets thread’s C (parent) pointer to the current running thread, then it gets blocked by calling sema_down() on its (wsem) semaphore. When C exits its checks whether its parent is waiting on it, if so it wakes up the parent’s semaphore and terminates.
+
+=> When P calls wait(C) after C exits: it won’t find process C in its child_list so it would return -1.
+
+=> Resources are freed on calling thread_exit(), where we free all the data structures that got memory allocated using malloc() in this thread, afterwards we call process_exit() which frees the thread page.
+
+=> When P terminates without waiting before C exits: it will wake up all its children and then clears its child_list.
+
+=> When P terminates after C exits: The resources of P will be freed and all its children wake up and be removed from its child_list.
+
+=> No special cases.
+
+
+---- RATIONALE ----
+
+>> B9: Why did you choose to implement access to user memory from the
+>> kernel in the way that you did?
+
+=> Because it’s easier to implement a simple function validate_addr() that takes an address and checks whether it’s valid or not, if it’s not valid it will exit with status -1.
+
+>> B10: What advantages or disadvantages can you see to your design
+>> for file descriptors?
+
+=> Advantages :
+	1) The Struct describing an opened file is minimum.
+	2) Knowing what thread has what files opened and have access to is easier 
+=> Disadvantages :
+	1) The size can be very large if files are kept being opened which will cause a fault
+		to occur. 
+	2) Searching for the file using its descriptor requires a lot of time as it searches for
+		the file in the list until the entered file descriptor is equal to an entry in list.
+
+>> B11: The default tid_t to pid_t mapping is the identity mapping.
+>> If you changed it, what advantages are there to your approach?
+-we changed it to pid_t to be able to distinguish between both kernel threads and user programs thread. but it can also be implemented easily using the tid_t.
+
+
+
+
+
+
+			   SURVEY QUESTIONS
+			   ================
+
+Answering these questions is optional, but it will help us improve the
+course in future quarters.  Feel free to tell us anything you
+want--these questions are just to spur your thoughts.  You may also
+choose to respond anonymously in the course evaluations at the end of
+the quarter.
+
+
+
+>> In your opinion, was this assignment, or any one of the three problems
+>> in it, too easy or too hard?  Did it take too long or too little time?
+It was not so easy...it took a long time debugging some test cases.
+>> Did you find that working on a particular part of the assignment gave
+>> you greater insight into some aspect of OS design?
+
+=> sure, in part 1: we knew how the structure of the  stack is implemented.
+- in part 2: we knew how to use system calls to implement the execution of processes , waiting for a running thread and exit a running process
+- in part 3: we knew how to deal with file system calls as file open and file write. 
+
+>> Is there some particular fact or hint we should give students in
+>> future quarters to help them solve the problems?  Conversely, did you
+>> find any of our guidance to be misleading?
+-No.
+
+>> Do you have any suggestions for the TAs to more effectively assist
+>> students, either for future quarters or the remaining projects?
+-No.
+>> Any other comments?
+-No.
+
